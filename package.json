@@ -15,7 +15,7 @@
     "test-watch": "jest --watch",
     "test-cov": "jest --collectCoverage",
     "prepub": "yarn build",
-    "pub": "yarn prepub && yarn publish --access public",
+    "pub": "yarn prepub && yarn npm publish --access public",
     "tsc": "tsc --noEmit"
   },
   "peerDependencies": {
