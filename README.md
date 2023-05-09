@@ -1,17 +1,25 @@
-# TODO
+# `@ds-pack/tapable`
 
-Make sure to update this with the right documentation!
+A React Hook for creating accessible clickable primatives!
 
 ## Installation:
 
 ```sh
-yarn add TODO
+yarn add @ds-pack/tapable
 ```
 
 ## Usage:
 
 ```tsx
-// TODO
+import { useTapable } from '@ds-pack/tapable'
+
+let Tapable = forwardRef(function Tapable(props, ref) {
+  let baggage = useTapable(props, ref)
+
+  return <div {...baggage} />
+})
+
+render(<Tapable onClick={addLike}>Like!</Tapable>)
 ```
 
 ## Contributing:
